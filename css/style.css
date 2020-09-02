@@ -274,6 +274,7 @@ h1:before{
 
 .profile .container h2{
     font-size: 4rem;
+    letter-spacing: 5px;
     font-family: var(--title);
     color: var(--color-contrast-light);
 }
@@ -312,6 +313,7 @@ h1:before{
 
 .services .container h2{
     font-size: 4.2rem;
+    letter-spacing: 5px;
     font-family: var(--title);
     color: white;
 }
@@ -362,6 +364,36 @@ h1:before{
     text-align: center;
     padding: 2rem 3rem;
     color: var(--color-text);
+}
+
+/* PROJECTS */
+
+.projects{
+    width: 100%;
+    padding: 12rem 0;
+}
+
+.projects h2{
+    font-size: 4.2rem;
+    font-family: var(--title);
+    color: var(--color-contrast-light);
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 1440px;
+    height: 500px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background: #000;
 }
 
 
