@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montalvas - Personal Page</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -15,6 +14,17 @@
     <meta name="description" content="personal webpage">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home<span></span><span></span></a></li>
+                <li><a href="#about">Sobre<span></span><span></span></a></li>
+                <li><a href="#service">Serviços<span></span><span></span></a></li>
+                <li><a href="#portfolio">Portfolio<span></span><span></span></a></li>
+                <li><a href="">Contato<span></span><span></span></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="title">
         <div class="welcome">
@@ -37,7 +47,7 @@
                     <li><a href="https://www.linkedin.com/in/lucas-montalvani-oliveira-albuquerque-3855641a4/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com/lu_montalvani/?hl=pt-br" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     <li><a href="https://github.com/montalvas" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    <!--<li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>-->
                 </ul>
             </div><!--social hub-->
         </div><!--social-->
@@ -45,19 +55,21 @@
         <div class="arrow"></div>
     </section><!--title-->
 
-    <section class="profile">
+    <section id="about" class="profile">
         <div class="container">
             <div class="profile-title">
                 <h2>SOBRE MIM</h2>
 
                 <p>Desenvolvedor entusiasta e apaixonado por tecnologia, jogos e cultura japonesa desde pequeno. Tenho experiência em diversas áreas (ilustração, game design, arquitetura e modelagem 3d) e cada uma delas me molda no profissional que sou hoje. Não busco apenas um trabalho, mas a oportunidade de ser importante em algo. </p>
 
+                <p>Como desenvolvedor tenho trabalhado e desenvolvido projetos com a base do front-end (html, css e javascript). Tenho conhecimentos em JQUERY e ECMASCRIPT 6, onde desenvolvo algumas features com o NodeJS. Também trabalho com Wordpress e Woocommerce. Minha meta como desenvolvedor é alcançar proficiência nos três ambientes de desenvolvimento: Front-End, Back-End e Mobile.</p>
+
                 <h3>Tecnologias</h3>
 
                 <div class="tech">
                     <img src="img/icons/html.png" alt="icone do html, escudo cor laranja com o número cinco em branco no interior." title="html5">
                     <img src="img/icons/css.png" alt="icone do css, escudo cor azul com o número três em branco no interior." title="css3">
-                    <img src="img/icons/js.png" alt="icone do javascript, cor de fundo amarelo com um quadrado branco sem preenchimento interno e a sigla JS no interior." title="javscript">
+                    <img src="img/icons/js.png" alt="icone do javascript, cor de fundo amarelo com um quadrado branco sem preenchimento interno e a sigla JS no interior." title="javascript">
                     <img src="img/icons/jquery.png" alt="icone do jquery, sucessão de luas crescentes com redução do tamanho, na cor preta." title="JQuery">
                     <img src="img/icons/nodejs.png" alt="icone do node js, sigla node com a letra 'o' em formato hexagonal e na cor verde, e demais letras na cor preta." title="Node JS">
                     <img src="img/icons/wordpress.png" alt="icone do wordpress, cor de fundo azul e a letra 'w' com a cor branca e em destaque." title="Wordpress">
@@ -69,48 +81,74 @@
 
     <section class="services">
         <div class="container">
-            <h2>SERVIÇOS</h2>
-            <p>Aquilo que eu faço de melhor para tornar sua ideia possível!</p>
+            <div id="service">
+                <h2>SERVIÇOS</h2>
+                <p>Aquilo que eu faço de melhor para tornar sua ideia possível!</p>
 
-            <div class="service-wraper">
-                <div class="service-single">
-                    <img src="img/icons/desenvolvimento.png" alt="">
-                    <h3>DESENVOLVIMENTO</h3>
-                    <p>Criação de sites institucionais, blogs, lojas virtuais, páginas de anúncio. Sites estruturados, funcionais e totalmente adaptados a dispositivos mobile.</p>
-                </div><!--service single-->
+                <div class="service-wraper">
+                    <div class="service-single">
+                        <img src="img/icons/desenvolvimento.png" alt="">
+                        <h3>DESENVOLVIMENTO</h3>
+                        <p>Criação de sites institucionais, blogs, lojas virtuais, páginas de anúncio. Sites estruturados, funcionais e totalmente adaptados a dispositivos mobile.</p>
+                    </div><!--service single-->
 
-                <div class="service-single">
-                    <img src="img/icons/design.png" alt="">
-                    <h3>DESIGN</h3>
-                    <p>Prototipagem, criação ou manutenção do visual do seu site. Conceituação do projeto através das cores, formas, imagens, alocação e disponibilidade do conteúdo.</p>
-                </div><!--service single-->
+                    <div class="service-single">
+                        <img src="img/icons/design.png" alt="">
+                        <h3>DESIGN</h3>
+                        <p>Prototipagem, criação ou manutenção do visual do seu site. Conceituação do projeto através das cores, formas, imagens, alocação e disponibilidade do conteúdo.</p>
+                    </div><!--service single-->
 
-                <div class="service-single">
-                    <img src="img/icons/consultoria.png" alt="">
-                    <h3>CONSULTORIA</h3>
-                    <p>Suporte para desenvolvimento ou manutenção de projetos. Seja código quebrado, redefinição do layout, tornar responsivo ou implementação de uma nova feature, eu posso ajudar!</p>
-                </div><!--service single-->
-            </div><!--service wraper-->
+                    <div class="service-single">
+                        <img src="img/icons/consultoria.png" alt="">
+                        <h3>CONSULTORIA</h3>
+                        <p>Suporte para desenvolvimento ou manutenção de projetos. Seja código quebrado, redefinição do layout, tornar responsivo ou implementação de uma nova feature, eu posso ajudar!</p>
+                    </div><!--service single-->
+                </div><!--service wraper-->
+            </div><!--service-->
         </div><!--container-->
     </section><!--services-->
 
-    <section class="projects">
-        <h2>PORTFOLIO</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image: url(img/screencapture-montalvas-github-io-Projeto-LandingPage01-2020-09-02-12_45_28.png)">
-                  <button>botao</button>
-              </div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-            </div><!--swiper wrapper-->
-        </div><!--swiper container-->
-    </section><!--projects-->
+    <section class="portfolio">
+        <div class="container">
+            <div class="box-wraper">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Nome projeto</h3>
+                        <a href="#">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Nome projeto</h3>
+                        <a href="#">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
+
+                <div class="box">
+                    <div class="img-box">
+                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Nome projeto</h3>
+                        <a href="#">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
+                
+            </div><!--box-wraper-->
+            
+        </div><!--container-->
+    </section><!--portfolio-->
+
+    
 </body>
 </html>
