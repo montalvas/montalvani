@@ -21,7 +21,7 @@
                 <li><a href="#about">Sobre<span></span><span></span></a></li>
                 <li><a href="#service">Serviços<span></span><span></span></a></li>
                 <li><a href="#portfolio">Portfolio<span></span><span></span></a></li>
-                <li><a href="">Contato<span></span><span></span></a></li>
+                <li><a href="#contato">Contato<span></span><span></span></a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             <h1 data-text="Lucas Montalvani">Lucas Montalvani</h1>
             <p>Desenvolvedor Front-End e Designer</p>
             <button>
-                Contato
+                <a href="#contato">Contato</a>
                 <span></span>
             </button>
         </div><!--welcome-->
@@ -109,38 +109,73 @@
     </section><!--services-->
 
     <section class="portfolio">
-        <div class="container">
+        <div id="portfolio" class="container">
+            <h2>PORTFOLIO</h2>
+
             <div class="box-wraper">
                 <div class="box">
                     <div class="img-box">
-                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                        <img src="img/projeto01.png" alt="Projeto 01">
                     </div><!--img box-->
                     
                     <div class="details">
-                        <h3>Nome projeto</h3>
-                        <a href="#">Link</a>
+                        <h3>Danki Code</h3>
+                        <a href="https://montalvas.github.io/Projeto_LandingPage01/" target="_blank">Link</a>
                     </div><!--details-->
                 </div><!--box-->
 
                 <div class="box">
                     <div class="img-box">
-                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                        <img src="img/projeto02.png" alt="Projeto 02">
                     </div><!--img box-->
                     
                     <div class="details">
-                        <h3>Nome projeto</h3>
-                        <a href="#">Link</a>
+                        <h3>Hotel Cote D Azul Ville</h3>
+                        <a href="https://montalvas.github.io/Projeto_LandingPage02/" target="_blank">Link</a>
                     </div><!--details-->
                 </div><!--box-->
 
                 <div class="box">
                     <div class="img-box">
-                        <img src="http://lorempixel.com/output/technics-q-c-300-300-1.jpg" alt="image">
+                        <img src="img/projeto03.png" alt="Projeto 03">
                     </div><!--img box-->
                     
                     <div class="details">
-                        <h3>Nome projeto</h3>
-                        <a href="#">Link</a>
+                        <h3>Site Empresarial</h3>
+                        <a href="https://montalvas.github.io/Projeto_LandingPage03/" target="_blank">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
+
+                <div class="box">
+                    <div class="img-box">
+                        <img src="img/projeto04.png" alt="Projeto 04">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Site Odontóloga</h3>
+                        <a href="https://montalvas.github.io/Projeto_LandingPage04/" target="_blank">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
+
+                <div class="box">
+                    <div class="img-box">
+                        <img src="img/projeto05.png" alt="Projeto 05">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Concessionária Horizon</h3>
+                        <a href="https://montalvas.github.io/Projeto_LandingPage05/" target="_blank">Link</a>
+                    </div><!--details-->
+                </div><!--box-->
+
+                <div class="box">
+                    <div class="img-box">
+                        <img src="img/facebook.png" alt="facebook login page">
+                    </div><!--img box-->
+                    
+                    <div class="details">
+                        <h3>Facebook Login</h3>
+                        <a href="https://montalvas.github.io/Projeto_facebook/" target="_blank">Link</a>
                     </div><!--details-->
                 </div><!--box-->
                 
@@ -148,6 +183,19 @@
             
         </div><!--container-->
     </section><!--portfolio-->
+
+    <section class="contato">
+        <div id="contato" class="form">
+            <h2>Entre em contato</h2>
+
+            <form action="https://formspree.io/xjvanqpd" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="_replyto" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div><!--form-->
+    </section><!--contato-->
 
     
 </body>

@@ -214,13 +214,13 @@ h1:before{
     padding: 0.8rem 2.4rem;
     font-size: 2rem;
     border: none;
-    color: var(--color-contrast);
     background-color: transparent;
     cursor: pointer;
     overflow: hidden;
+    outline: 0;
 }
 
-.welcome button:hover, .welcome button:focus{
+.welcome button:hover a, .welcome button:focus a{
     color: white;
 }
 
@@ -251,6 +251,11 @@ h1:before{
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
     background: var(--color-contrast-light);
+}
+
+.welcome button a{
+    text-decoration: none;
+    color: var(--color-contrast);
 }
 
 .social{
@@ -484,35 +489,6 @@ h1:before{
     color: var(--color-text);
 }
 
-/* PROJECTS */
-
-.projects{
-    width: 100%;
-    padding: 12rem 0;
-}
-
-.projects h2{
-    font-size: 4.2rem;
-    font-family: var(--title);
-    color: var(--color-contrast-light);
-    letter-spacing: 5px;
-    text-align: center;
-    margin-bottom: 6rem;
-}
-
-.swiper-container {
-    width: 100%;
-    max-width: 1440px;
-    height: 500px;
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-}
-
 /* Portfolio */
 
 .portfolio{
@@ -527,6 +503,15 @@ h1:before{
     margin: 0 auto;
 }
 
+.portfolio .container h2{
+    font-size: 4.2rem;
+    font-family: var(--title);
+    color: var(--color-contrast);
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
 .box-wraper{
     width: 100%;
     display: grid;
@@ -536,7 +521,7 @@ h1:before{
 }
 
 .box{
-    height: 400px;
+    height: 45rem;
     background: white;
     border-radius: 15px;
     overflow: hidden;
@@ -559,29 +544,118 @@ h1:before{
     background: #fff;
     z-index: 4;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     text-align: center;
     padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .details h3{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 400;
     margin-bottom: 2rem;
-    color: var(--color-contrast);
+    color: #331E36;
 }
 
 .details a{
     background: var(--color-contrast-light);
-    padding: 8px 40px;
-    font-size: 1.8rem;
+    padding: 8px 30px;
+    font-size: 1.6rem;
     text-decoration: none;
     border-radius: 2rem;
     color: #fff;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
 }
 
 .details a:hover{
     background: var(--color-contrast);
+}
+
+/* CONTATO */
+
+.contato{
+    width: 100%;
+    padding: 12rem 0;
+    background: var(--color-contrast-light);
+}
+
+.form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    row-gap: 5rem;
+    box-shadow: -1px 6px 18px -3px rgba(0,0,0,0.75);
+}
+
+.form h2{
+    font-size: 2.8rem;
+    color: #735ADA;
+}
+
+.form form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.form input{
+    width: 30rem;
+    padding: 10px 20px;
+    border: 2px solid rgba(200,200,200,0.8);
+    font-size: 1.6rem;
+    color: var(--color-text);
+}
+
+.form input:focus{
+    outline: 0;
+}
+
+.form input::placeholder{
+    color: var(--color-contrast-lighter);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form textarea{
+    width: 30rem;
+    padding: 10px 20px;
+    border: 2px solid rgba(200,200,200,0.8);
+    font-size: 1.6rem;
+    color: var(--color-text);
+    resize: vertical;
+    font-family: var(--content);
+}
+
+.form textarea:focus{
+    outline: 0;
+}
+
+.form textarea::placeholder{
+    color: var(--color-contrast-lighter);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form form > button{
+    padding: 12px 24px;
+    border-radius: 20px;
+    background: #735ADA;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
 }
 
 
