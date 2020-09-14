@@ -86,8 +86,82 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    header{
+        padding: 0;
+    }
+    
+    .menu-desktop{
+        display: none;
+    }
+    
+    .box-wraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        width: 300px;
+    }
     
     .form {
         max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 40%;
+    }
+
+    .foto-perfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-hub ul li a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .social-hub ul li a:before{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 2px solid rgba(0,0,0,0.1);
+    }
+
+    .profile .container p:last-of-type{
+        margin-bottom: 6rem;
+    }
+
+    .profile .container .tech img{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 0;
+    }
+
+    .services .container{
+        padding: 6rem 3rem;
+    }
+
+    #service > p{
+        margin-bottom: 6rem;
+    }
+
+    .service-single{
+        width: 36rem;
+    }
+
+    .box{
+        width: 300px;
+        height: 380px;
     }
 }

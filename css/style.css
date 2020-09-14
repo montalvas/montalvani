@@ -36,7 +36,11 @@ nav{
     margin: 0 auto;
 }
 
-.menu{
+.menu-mobile{
+    display: none;
+}
+
+.menu-desktop{
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -45,7 +49,7 @@ nav{
     list-style: none;
 }
 
-.menu li a{
+.menu-desktop li a{
     text-decoration: none;
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -53,11 +57,11 @@ nav{
     position: relative;
 }
 
-.menu li a:hover{
+.menu-desktop li a:hover{
     color: var(--color-contrast-light);
 }
 
-.menu li a span:first-child:before{
+.menu-desktop li a span:first-child:before{
     content: '';
     position: absolute;
     top: 0;
@@ -71,13 +75,13 @@ nav{
     opacity: 0;
 }
 
-.menu li a:hover span:first-child:before{
+.menu-desktop li a:hover span:first-child:before{
     top: -8px;
     left: -8px;
     opacity: 1;
 }
 
-.menu li a span:first-child:after{
+.menu-desktop li a span:first-child:after{
     content: '';
     position: absolute;
     top: 0;
@@ -91,13 +95,13 @@ nav{
     opacity: 0;
 }
 
-.menu li a:hover span:first-child:after{
+.menu-desktop li a:hover span:first-child:after{
     top: -8px;
     right: -8px;
     opacity: 1;
 }
 
-.menu li a span:last-child:before{
+.menu-desktop li a span:last-child:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -111,13 +115,13 @@ nav{
     opacity: 0;
 }
 
-.menu li a:hover span:last-child:before{
+.menu-desktop li a:hover span:last-child:before{
     bottom: -8px;
     left: -8px;
     opacity: 1;
 }
 
-.menu li a span:last-child:after{
+.menu-desktop li a span:last-child:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -131,7 +135,7 @@ nav{
     opacity: 0;
 }
 
-.menu li a:hover span:last-child:after{
+.menu-desktop li a:hover span:last-child:after{
     bottom: -8px;
     right: -8px;
     opacity: 1;
